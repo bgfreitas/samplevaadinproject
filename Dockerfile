@@ -10,8 +10,8 @@ RUN git clone -b master https://github.com/bgfreitas/samplevaadinproject.git
 
 
 FROM maven:3.5-jdk-8-alpine as build
-COPY --from=clone /app/AraSolution /home/ara/AraSolution
-WORKDIR /app
+COPY --from=clone /app/samplevaadinproject /app/samplevaadinproject
+WORKDIR /app/samplevaadinproject
 RUN mvn clean package -DskipTests -P production
 EXPOSE 8080
 CMD ["java -jar target/samplevaadinproject-2.0-SNAPSHOT.jar"]
