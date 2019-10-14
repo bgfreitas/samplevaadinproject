@@ -3,7 +3,7 @@
     <groupId>com.unilabs.brunofreitas</groupId>
     <artifactId>samplevaadinproject</artifactId>
     <name>samplevaadinproject</name>
-    <version>2.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
