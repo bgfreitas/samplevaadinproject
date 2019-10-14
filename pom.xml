@@ -151,6 +151,9 @@
                         <configuration>
                             <transpileOutputDirectory>${project.build.directory}/classes/META-INF/resources
                             </transpileOutputDirectory>
+                            <!--<bundle>false</bundle>-->
+                            <!--<minify>false</minify>-->
+                            <skipEs5>true</skipEs5>
                         </configuration>
                     </plugin>
                 </plugins>
