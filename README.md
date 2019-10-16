@@ -1,19 +1,25 @@
-# Project Base for Vaadin Flow and Spring Boot
+# Sample Vaadin project for testing 
+##### Project Base for Vaadin Flow and Spring Boot
 
-This project can be used as a starting point to create your own Vaadin Flow application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+* Project starter downloaded from (https://vaadin.com/start/latest)
+* Spring Boot Tech Stack
+* Vaadin 14.0.9 (compatibility mode)
 
-The best way to create your own project based on this starter is [start.vaadin.com](https://start.vaadin.com/) - you can get only the necessary parts and choose the package naming you want to use.
+## Some tests
 
-Import the project to the IDE of your choosing as a Maven project.
+* FullCalendar Addon (https://github.com/stefanuebe/vaadin_fullcalendar)
+* Configuration with skipEs5 packaging configuration
+  - issue found: https://github.com/vaadin/flow/issues/6683
 
-Run the application using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
 
-Open http://localhost:8080/ in a browser.
+## Run
 
-If you want to run the application locally in the production mode, run `mvn spring-boot:run -Pproduction`.
+* mvn clean package -Pproduction
+* java -jar target/samplevaadinproject-1.0-SNAPSHOT.jar
 
-For documentation on using Vaadin Flow and Spring, visit [vaadin.com/docs](https://vaadin.com/docs/flow/spring/tutorial-spring-basic.html)
+## Run with Docker
 
-For more information on Vaadin Flow, visit https://vaadin.com/flow.
+* docker build -t ara_alpine .
+
+
 
